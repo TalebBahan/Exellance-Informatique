@@ -1,0 +1,33 @@
+@font-face {
+  font-family: Yekan;
+  src: url(./../public/font/iranyekanwebregular.e31c09af.woff2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Yekan', sans-serif;
+  user-select: none;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: #eee;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(147,147,153,1) 22%, rgba(0,212,255,1) 100%);  border-radius: 3px;
+  width: 5px;
+}
