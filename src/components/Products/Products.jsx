@@ -1,4 +1,4 @@
-import React, { useContext ,lazy ,useEffect} from "react";
+import React, { useContext ,lazy ,useEffect,Suspense} from "react";
 import "./Products.css";
 import { FilterContext } from "../Context/ContextFilter";
 import { useParams } from "react-router-dom";
@@ -23,6 +23,7 @@ export default function Products() {
   return (
     <div className='wrapper'>
       <div className="product_container">
+      <Suspense>
         {productsList.length > 0 ? (
           productsList.map((product) => <LazyImage key={product.id} {...product} />)
         ) : (
@@ -40,7 +41,9 @@ export default function Products() {
             </span> */}
           </div>
         )}
+        </Suspense>
       </div>
+
     </div>
   );
 }

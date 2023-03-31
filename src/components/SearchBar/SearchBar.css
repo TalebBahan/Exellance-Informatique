@@ -2,8 +2,8 @@
 #top-bar {
   width: 100%;
   
-  border-left: 3px solid #5c96ca;
-  border-right: 3px solid #5c96ca;
+  border-left: 3px solid #6366F1;
+  border-right: 3px solid #6366F1;
   border-radius: 10px;
   padding: 0.5rem 0.75rem;
   padding-left: 1.25rem;
@@ -13,7 +13,7 @@
 }
 
 #top-bar > .logo__serch {
-  color: #5c96ca;
+  color: #6366F1;
   font-size: 1.5rem;
   cursor: pointer;
 }
@@ -35,7 +35,7 @@
 /* #top-bar > .account-button {
   border: none;
   outline: none;
-  color: #5c96ca;
+  color: #6366F1;
   font-size: 1rem; 
   height: 2rem;
   width: 2rem;

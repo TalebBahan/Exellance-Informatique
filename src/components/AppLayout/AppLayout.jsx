@@ -4,15 +4,14 @@ import SearchBar from "../SearchBar/SearchBar";
 import Footer from "../Footer/Footer";
 import ImageSlider from "../ImageSlider";
 import { Outlet } from "react-router-dom";
-import './applayout.css'
 export default function AppLayout() {
     const slides = [
-        { url: "./images/cover2.jpeg", title: "boat" },
-        { url: "./images/cover.png", title: "beach" }
+        { url: "/images/cover2.jpeg", title: "boat" },
+        { url: "/images/cover.png", title: "beach" }
     ];
     const containerStyles = {
         width: "100%",
-        height: "300px",
+        height: "350px",
         margin: "0 auto",
     };
     return (

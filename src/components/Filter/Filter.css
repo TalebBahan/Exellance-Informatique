@@ -74,10 +74,10 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   margin-top: 10px;
-  border-left: 3px solid #5c96ca;
-  border-right: 3px solid #5c96ca;
+  border-left: 3px solid #6366F1;
+  border-right: 3px solid #6366F1;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: #e5e7eb;
   color: #000;
   border-radius: 5px;
   padding: 10px 5px;
@@ -90,7 +90,7 @@ body {
   line-height: 35px;
   display: block;
   border-radius: 5px;
-  background-color: #fff;
+  /* background-color: #fff; */
   border: none;
   outline: none;
   color: #424242;
@@ -102,7 +102,7 @@ body {
 }
 
 .active {
-  background-color: #5c96ca !important;
+  background-color: #6366F1 !important;
   border-radius: 0.2px !important;
   color: white !important;
 }

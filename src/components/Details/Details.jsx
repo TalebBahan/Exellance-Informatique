@@ -5,7 +5,7 @@ import  Message  from "../message/Message";
 import { HiArrowLeft } from "react-icons/hi";
 import emailjs from '@emailjs/browser';
 import "./Details.css";
-import Buttons from "../Buttons/Buttons";
+
 
 export default function Details() {
   const [res,setRes] = useState(false)
@@ -72,7 +72,7 @@ export default function Details() {
               Demande Un Devis
             </button>
           </form>
-          {checkBasket && <Buttons {...datas} />}
+          
 
         </div>
       </div>

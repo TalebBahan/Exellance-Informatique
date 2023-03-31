@@ -1,9 +1,8 @@
 import React, { useContext } from "react";
 import { FiShoppingCart } from "react-icons/fi";
-import Interest from "./Interest";
 import { Link } from "react-router-dom";
 import { ProductContext, ProductDispath } from "../../Context/ContextProvider";
-import Buttons from "../../Buttons/Buttons";
+
 
 export default function Card(props) {
   const { dispath } = useContext(ProductDispath);
@@ -25,9 +24,7 @@ export default function Card(props) {
         </div>
       </Link>
       
-      {checkBasket ? (
-        <Buttons {...datas} />
-      ) : (
+    
         <Link to={`/${props.id}`}  style={{width:'100%',color:"#333"}}>
         <div className="title">
             <span>{props.title}</span>
@@ -40,7 +37,7 @@ export default function Card(props) {
           <FiShoppingCart className="buy_icon" />
         </button>
         </Link>
-      )}
+  
       
     </div>
   );

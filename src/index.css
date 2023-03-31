@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @font-face {
   font-family: Yekan;
   src: url(./../public/font/iranyekanwebregular.e31c09af.woff2);
@@ -30,4 +33,18 @@ body {
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(147,147,153,1) 22%, rgba(0,212,255,1) 100%);  border-radius: 3px;
   width: 5px;
+}
+a{
+  cursor: pointer;
+}
+img, svg, video, canvas, audio, iframe, embed, object {
+  display: inline !important;
+  vertical-align:baseline;
+}
+
+
+@media screen and (max-width: 770px) {
+  .search_header {
+    display: none;
+  }
 }

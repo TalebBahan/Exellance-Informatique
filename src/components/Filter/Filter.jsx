@@ -1,11 +1,9 @@
-import React, { useContext } from "react";
-
+import React from "react";
 import "./Filter.css";
-import { MdArrowDropDown } from 'react-icons/md'
-import {Link} from 'react-router-dom'
+import { Link , useLocation} from 'react-router-dom'
 export default function Filter() {
-  
-  const [activeButton, setActiveButton] = React.useState(null);
+  const location = useLocation();
+  console.log(location.pathname);
   const [responsive, setResponsive] = React.useState(false);
 
   function handleToggle() {
@@ -13,7 +11,7 @@ export default function Filter() {
   }
 
   const buttons = [
-    { text: 'Accueil', type: 'ALL' },
+    // { text: 'Accueil', type: 'ALL' },
     { text: 'PC Fix', type: 'pc_fix' },
     { text: 'Portable', type: 'portable' },
     { text: 'Imprimante', type: 'impriment' },
@@ -28,15 +26,18 @@ export default function Filter() {
   return (
     <div>
       <div className={`topnav ${responsive ? 'responsive' : ''}`} id="myTopnav">
+        <Link
+          to={`/`}
+          className={`filter_btn ${location.pathname === '/' ? 'active' : ''}`}
+          id={'Accueil'}
+        >
+          Accueil
+        </Link>
         {buttons.map(({ text, type }) => (
           <Link
             to={`/filter/${type}`}
             key={type}
-            onClick={() => {
-              setActiveButton(type);
-              
-            }}
-            className={`filter_btn ${activeButton === type ? 'active' : ''}`}
+            className={`filter_btn ${location.pathname === `/filter/${type}` ? 'active' : ''}`}
             id={type}
           >
             {text}

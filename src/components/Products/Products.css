@@ -79,7 +79,7 @@
 }
 
 .buy_button {
-  background:#5c96ca;
+  background:#6366F1;
   transition: all 1s ease;
 }
 
@@ -89,7 +89,7 @@
 }
 
 .buy_button:hover {
-  background: linear-gradient(90deg, rgba(24,32,54,1) 0%, rgba(0,168,255,0.7511379551820728) 35%, rgba(0,212,255,1) 71%);
+  background: #4F46E5;
 
 }
 
