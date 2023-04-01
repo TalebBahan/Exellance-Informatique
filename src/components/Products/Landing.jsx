@@ -1,8 +1,14 @@
-import React from 'react'
-import Contact from './Contact'
+import React,{useEffect,useContext} from 'react'
+import Contact from '../AppLayout/Contact'
+import { FilterDispath } from '../Context/ContextFilter';
+
 // import "tailwindcss/tailwind.css";
 import { Link } from 'react-router-dom'
 export default function Landing() {
+    const { dispath } = useContext(FilterDispath);
+    useEffect(() => {
+      dispath({ type:'ALL' });
+    }, []);
     return (
         <div>
 
@@ -10,9 +16,9 @@ export default function Landing() {
                 <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
                     <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                         <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Bienvenue chez
-                            <br className="hidden lg:inline-block" />Excellence Informatique
+                            <br className="hidden lg:inline-block " /><span className='text-indigo-500'>Excellence Informatique</span>
                         </h1>
-                        <p className="mb-8 leading-relaxed">votre boutique informatique de référence ! Nous sommes fiers de vous offrir une large sélection de produits informatiques de qualité supérieure, comprenant des ordinateurs portables, des caméras, des commutateurs, des composants de PC et des licences de bureautique..</p>
+                        <p className="mb-8 leading-relaxed">Nous sommes une entreprise de services informatiques dédiés aux entreprises. Nous agissons dans les domaines de la fourniture, de l’installation, de la maintenance, de la sécurisation, et de la conception de votre système informatique. Nous pouvons vous offrir ainsi un suivi de votre parc informatique et une maîtrise parfaite de vos réseaux afin d’optimiser votre stratégie d’entreprise.</p>
 
                     </div>
                     <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
@@ -30,7 +36,7 @@ export default function Landing() {
                             <div className="flex-grow">
                                 <h2 className="text-gray-900 text-lg title-font font-medium mb-3">Portable</h2>
                                 <p className="leading-relaxed text-base">i3 i5 i7 i9 avec tous les generation.</p>
-                                <Link className="mt-3 text-indigo-500 inline-flex items-center" to={'/filter/portable'}>Savoir Plus
+                                <Link className="mt-3 text-indigo-500 inline-flex items-center" to={'/filter/portable'} onClick={()=>window.scrollTo(0, 0)}>Savoir Plus
                                     <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                                         <path d="M5 12h14M12 5l7 7-7 7"></path>
                                     </svg>
@@ -42,7 +48,7 @@ export default function Landing() {
                             <div className="flex-grow">
                                 <h2 className="text-gray-900 text-lg title-font font-medium mb-3">Licence</h2>
                                 <p className="leading-relaxed text-base">Office 2016 Office 2019 Office 2021.</p>
-                                <Link className="mt-3 text-indigo-500 inline-flex items-center" to={'/filter/licence'}>Savoir Plus
+                                <Link className="mt-3 text-indigo-500 inline-flex items-center" to={'/filter/licence'} onClick={()=>window.scrollTo(0, 0)}>Savoir Plus
                                     <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                                         <path d="M5 12h14M12 5l7 7-7 7"></path>
                                     </svg>
@@ -54,7 +60,7 @@ export default function Landing() {
                             <div className="flex-grow">
                                 <h2 className="text-gray-900 text-lg title-font font-medium mb-3">PC fix</h2>
                                 <p className="leading-relaxed text-base">SSD HDD Ram 8 16 32.</p>
-                                <Link className="mt-3 text-indigo-500 inline-flex items-center" to={'/filter/pc_fix'}>Savoir Plus
+                                <Link className="mt-3 text-indigo-500 inline-flex items-center" to={'/filter/pc_fix'} onClick={()=>window.scrollTo(0, 0)}>Savoir Plus
                                     <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                                         <path d="M5 12h14M12 5l7 7-7 7"></path>
                                     </svg>
@@ -65,6 +71,26 @@ export default function Landing() {
                 </div>
             </section>
 
+            <section className="text-gray-700 body-font">
+                <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+
+                    <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                        <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Equipe commerciale Et
+                            <br className="hidden lg:inline-block " /><span className='text-indigo-500'>Matériel informatique</span>
+                        </h1>
+                        <p className="mb-8 leading-relaxed">Nous vous proposons à la vente tout type de matériel informatique. Notre équipe commerciale saura vous conseiller afin de définir vos besoins et vous proposer des produits fiables et performants.
+
+                            Nos experts techniques prendront également en charge tous les dépannages informatiques ainsi que les installations de logiciels, vous assurant ainsi service après-vente efficace et réactif.
+
+                            Ils pourront également vous accompagner dans votre développement informatique au travers des infogérances et des contrats de maintenance.</p>
+
+                    </div>
+                    <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                        <img className="object-cover object-center rounded" alt="hero" src="./images/5MP-removebg-preview.png" />
+                    </div>
+                    
+                </div>
+            </section>
 
 
             <section className="text-gray-700 body-font relative">

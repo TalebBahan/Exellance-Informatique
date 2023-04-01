@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { FiShoppingCart } from "react-icons/fi";
 import { Link } from "react-router-dom";
-import { ProductContext, ProductDispath } from "../../Context/ContextProvider";
+import { ProductContext, ProductDispath } from "../Context/ContextProvider";
 
 
 export default function Card(props) {

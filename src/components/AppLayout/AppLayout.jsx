@@ -1,8 +1,8 @@
 import React from 'react'
 import Filter from "../Filter/Filter";
 import SearchBar from "../SearchBar/SearchBar";
-import Footer from "../Footer/Footer";
-import ImageSlider from "../ImageSlider";
+import Footer from "./Footer";
+import ImageSlider from "./ImageSlider";
 import { Outlet } from "react-router-dom";
 export default function AppLayout() {
     const slides = [

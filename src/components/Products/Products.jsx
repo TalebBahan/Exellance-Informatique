@@ -6,7 +6,7 @@ import { FilterDispath } from "../Context/ContextFilter";
 // import Card from "./Card/Card";
 
 
-const LazyImage = lazy(() => import('./Card/Card'));
+const LazyImage = lazy(() => import('./Card'));
 export default function Products() {
   const { type } = useParams();
   const { dispath } = useContext(FilterDispath);

@@ -4,7 +4,7 @@ import { ProductContext} from "../Context/ContextProvider";
 import  Message  from "../message/Message";
 import { HiArrowLeft } from "react-icons/hi";
 import emailjs from '@emailjs/browser';
-import "./Details.css";
+import "./Demande.css";
 
 
 export default function Details() {
