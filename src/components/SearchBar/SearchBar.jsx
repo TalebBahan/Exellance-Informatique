@@ -25,7 +25,7 @@ export default function SearchBar() {
   });
 
   return (
-    <div class="relative w-96 max-w-lg">
+    <div class="relative max-w-lg">
       <div className="searchBar_box">
         <div id="top-bar">
           <AiOutlineDesktop className='logo__serch' />
@@ -41,8 +41,8 @@ export default function SearchBar() {
           {productsList.map((product, index) => {
             return index<=6 ?
             <div class="cursor-pointer py-2 px-3 hover:bg-slate-100">
-              <p class="text-sm font-medium text-gray-600">{product.category}</p>
-              <p class="text-sm text-gray-500">{product.title}</p>
+             <Link to={`/${product.id}`}><p class="text-sm font-medium text-gray-600">{product.category}</p></Link>
+             <Link to={`/${product.id}`}><p class="text-sm text-gray-500">{product.title}</p></Link> 
             </div>
             : null
           }

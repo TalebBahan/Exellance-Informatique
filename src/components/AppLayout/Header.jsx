@@ -29,7 +29,10 @@ function Header() {
         </a>
 
         <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-          <div className="search_header">{pathname === "/" && <SearchBar />}</div>
+            <a class="ml-5 hover:text-gray-900">37 37 38 17</a>
+            <a class="ml-5 hover:text-gray-900">Achat@Excellence-Informatique.com</a>
+          <div className="ml-5 search_header">{pathname === "/" && <SearchBar />}</div>
+
         </nav>
 
       </div>

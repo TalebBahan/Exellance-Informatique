@@ -2,7 +2,6 @@ import React, { useContext,useRef, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { ProductContext} from "../Context/ContextProvider";
 import  Message  from "../message/Message";
-import { HiArrowLeft } from "react-icons/hi";
 import emailjs from '@emailjs/browser';
 import "./Demande.css";
 
@@ -33,7 +32,6 @@ export default function Details() {
     {res &&<Message />}
       <div className="details_linkBar">
         <span onClick={() => navigate(-1)} className="details_backLink">
-          <HiArrowLeft />
           Revenir
         </span>
       </div>

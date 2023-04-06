@@ -1,7 +1,6 @@
 import React, { useRef } from 'react'
 import emailjs from '@emailjs/browser';
 import { useNavigate } from 'react-router-dom';
-import { HiArrowLeft } from 'react-icons/hi';
 export default function Contact() {
     const form = useRef();
     const navigate = useNavigate();
@@ -17,6 +16,7 @@ export default function Contact() {
                 console.log(error.text);
             });
     };
+    console.log(1)
     return (
         <form className="container px-5 py-24 mx-auto flex" onSubmit={(event) => sendEmail(event)} ref={form}>
             <div className="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10">
