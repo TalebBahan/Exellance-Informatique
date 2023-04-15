@@ -91,7 +91,7 @@ export default function Card(props) {
   return (
     <div key={props.id} className="box">
       <Link>
-        <img className="product_img" src={`http://localhost:5000/images/${props.image}`} alt="product" loading="lazy" />
+        <img className="product_img" src={`http://31.207.34.230/images/${props.image}`} alt="product" loading="lazy" />
         <div className="content">
           {renderContent()}
         </div>
