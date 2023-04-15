@@ -28,7 +28,7 @@ db.connect((err) => {
 // configure multer to store uploaded images
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, "public/images/");
+    cb(null, "/var/www/exInfo/images");
   },
   filename: function (req, file, cb) {
     cb(null, Date.now() + path.extname(file.originalname));
