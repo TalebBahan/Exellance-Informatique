@@ -21,7 +21,6 @@ export default function App() {
         <Route path='/:id' element={<Demande />} />
         <Route path='/admin-cheik'>
           <Route index element={<Admin />} />
-          {/* <Route path='update' element={<UpdateProduct />} /> */}
         </Route>
         <Route path='*' element={<Navigate to={'/'} />} />
       </Routes>

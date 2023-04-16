@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-wrap md:text-left text-center -mb-10 -mx-4">
           <div className="lg:w-1/3 md:w-1/3 w-full px-4">
-            <h2 className="title-font font-medium text-gray-200 tracking-widest text-sm mb-4">Contactez Nous!</h2>
+            <h2 className="title-font font-medium text-gray-200 tracking-widest text-sm mb-4">CATEGORIES</h2>
             <nav className="list-none mb-10">
               <li>
                 <Link to={'/filter/pc_fix'}   onClick={()=>window.scrollTo(0, 0)} className="text-gray-100 hover:text-gray-300">PC Fix</Link>
@@ -29,7 +29,7 @@ export default function Footer() {
             </nav>
           </div>
           <div className="lg:w-1/3 md:w-1/3 w-full px-4">
-            <h2 className="title-font font-medium text-gray-100 tracking-widest text-sm mb-3">CATEGORIES</h2>
+            <h2 className="title-font font-medium text-gray-100 tracking-widest text-sm mb-3">Contactez Nous!</h2>
             <nav className="list-none mb-10">
               <li>
                 <a className="text-gray-500">

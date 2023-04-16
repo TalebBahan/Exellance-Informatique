@@ -23,7 +23,7 @@ function Header() {
   return (
     <header className="text-gray-700 body-font border-b border-gray-200">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" href="https://tailblocks.cc" target="_blank">
+        <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" href="" target="_blank">
           <img width={200} src='/images/logo.png' />
         </a>
 
